@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Welocome to ragedi store</h1>
+    </header>
+
+    <main>
+        <section>
+            <h1>Snacks</h1>
+            <table>
+                <tr>
+                    <td class="cell1"><img src="snacks_images/goslo's.jpeg" /><label>goslo's</label></td>
+                    <td class="cell2"><label id="price">R7.00</label><input type="number" oncontextmenu="return false;"
+                            onpaste="return false;" onkeydown="handleKeyPress(event)" value="1" min="1" /><input
+                            type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="snacks_images/chippa.jpeg" /><label>chippa</label></td>
+                    <td class="cell2"><label id="price">R7.00</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="snacks_images/doritos.png" /><label>doritos</label></td>
+                    <td class="cell2"><label id="price">R24.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="snacks_images/nik_naks.jpg" /><label>nik naks</label></td>
+                    <td class="cell2"><label id="price">R24.50</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="snacks_images/simba.png" /><label>simba</label></td>
+                    <td class="cell2"><label id="price">R24.89</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h1>Chips</h1>
+            <table>
+                <tr>
+                    <td class="cell1"><img src="chips_images/small_chips.jpg" /><label>small chips</small></label></td>
+                    <td class="cell2"><label id="price">R15.00</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="chips_images/medium_chips.jpg" /><label>medium chips</label></td>
+                    <td class="cell2"><label id="price">R30.00</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="chips_images/large_chips.jpg" /><label>large chips</label></td>
+                    <td class="cell2"><label id="price">R50.00</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h1>Sandwiches Wraps & Kota</h1>
+            <table>
+                <tr>
+                    <td class="cell1"><img src="sandwich_and_kota/sandwich_small.jpg" /><label>small sandwich</label>
+                    </td>
+                    <td class="cell2"><label id="price">R15.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="sandwich_and_kota/sandwich_medium.jpg" /><label>medium sandwich</label>
+                    </td>
+                    <td class="cell2"><label id="price">R27.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="sandwich_and_kota/sandwich_large.jpg" /><label>large sandwich</label>
+                    </td>
+                    <td class="cell2"><label id="price">R34.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="sandwich_and_kota/small_kota.jpg" /><label>small kota</label></td>
+                    <td class="cell2"><label id="price">R18.56</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="sandwich_and_kota/medium_kota.jpg" /><label>small kota</label></td>
+                    <td class="cell2"><label id="price">R29.58</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="sandwich_and_kota/large_kota.jpg" /><label>small kota</label></td>
+                    <td class="cell2"><label id="price">R40.56</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h1>Beverages</h1>
+            <table>
+                <tr>
+                    <td class="cell1"><img src="drinks_images/powerade.jpeg" /><label>powerade</label></td>
+                    <td class="cell2"><label id="price">R13.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="drinks_images/coke_can_300ml.png" /><label>coke can 300ml</label></td>
+                    <td class="cell2"><label id="price">R16.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="drinks_images/fanta.jpeg" /><label>fant can 330ml</label></td>
+                    <td class="cell2"><label id="price">R16.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="drinks_images/coke_2l.png" /><label>coke 2 liter</label></td>
+                    <td class="cell2"><label id="price">R29.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="drinks_images/sprite-2l.png" /><label>sprite 2 liter</label></td>
+                    <td class="cell2"><label id="price">R29.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="drinks_images/coke_1.25l.png" /><label>coke 1.25 liter</label></td>
+                    <td class="cell2"><label id="price">R14.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="drinks_images/cappy.jpg" /><label>cappy 1.5 liter</label></td>
+                    <td class="cell2"><label id="price">R32.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h1>Sweets & Treats</h1>
+            <table>
+                <tr>
+                    <td class="cell1"><img src="sweet_images/stambo_sweet.jpg" /><label>stambo sweet</label></td>
+                    <td class="cell2"><label id="price">R1.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="sweet_images/halls.png" /><label>halls</label></td>
+                    <td class="cell2"><label id="price">R1.50</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="sweet_images/snakes.jpeg" /><label>snake sweet</label></td>
+                    <td class="cell2"><label id="price">R2.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="sweet_images/tounges.jpg" /><label>tounge sweet</label></td>
+                    <td class="cell2"><label id="price">R2.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this)" value="ADD TO CART" /></td>
+                </tr>
+
+            </table>
+        </section>
+
+        <section>
+            <h1>Bread & Bakery</h1>
+            <table>
+                <tr>
+                    <td class="cell1"><img src="break_images/sasko.png" /><label>sasko white bread</label></td>
+                    <td class="cell2"><label id="price">R19.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this,19.59)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="break_images/abany_white.jpeg" /><label>albany white bread</label></td>
+                    <td class="cell2"><label id="price">R18.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this,18.59)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="break_images/sunback_brown.jpeg" /><label>sunbake brown bread</label>
+                    </td>
+                    <td class="cell2"><label id="price">R14.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this,14.59)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="break_images/donut.jpeg" /><label>donut with chocolate</label></td>
+                    <td class="cell2"><label id="price">R9.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this,9.59)" value="ADD TO CART" /></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h1>Fresh Produce</h1>
+            <table>
+                <tr>
+                    <td class="cell1"><img src="fresh_product/apple.png" /><label>apple</label></td>
+                    <td class="cell2"><label id="price">R4.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this,4.59)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="fresh_product/pears.jpg" /><label>pear</label></td>
+                    <td class="cell2"><label id="price">R4.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this,4.59)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="fresh_product/banana.png" /><label>banana</label></td>
+                    <td class="cell2"><label id="price">R4.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this,4.59)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="fresh_product/grapes.jpg" /><label>grapes</label></td>
+                    <td class="cell2"><label id="price">R15.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this,15.59)" value="ADD TO CART" /></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h1>Dairy & Deli</h1>
+            <table>
+                <tr>
+                    <td class="cell1"><img src="dairy/parmalat_yogut.jpeg" /><label>parmalat yourgut</label></td>
+                    <td class="cell2"><label id="price">R34.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this,34.59)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="dairy/ice_cream_rich_n_creamy.png" /><label>rich n creamy ice
+                            cream</label></td>
+                    <td class="cell2"><label id="price">R39.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this,39.59)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="dairy/dairy_milk.png" /><label>dairy milk chocolate</label></td>
+                    <td class="cell2"><label id="price">R24.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this,24.59)" value="ADD TO CART" /></td>
+                </tr>
+                <tr>
+                    <td class="cell1"><img src="dairy/milk_shake.png" /><label>milk shake</label></td>
+                    <td class="cell2"><label id="price">R34.59</label><input type="number" value="1"
+                            oncontextmenu="return false;" onpaste="return false;" onkeydown="handleKeyPress(event)"
+                            min="1" /><input type="submit" onclick="addToCart(this,34.59)" value="ADD TO CART" /></td>
+                </tr>
+            </table>
+        </section>
+
+        <div id="cart">
+            <div class="container">
+                <img id="bsk" src="bsk.png">
+                <h2>Cart</h2>
+            </div>
+            <table>
+                <tr>
+                    <td id="item_count">Items:0</td>
+                </tr>
+            </table>
+            <div id="total">Total: R0.00</div>
+        </div>
+
+
+        <section class="shoping_cart">
+            <h1>Shoping Cart</h1>
+            <div>
+                <table id="cart_list">
+                </table>
+            </div>
+
+            <div class="bt_bay">
+                <input type="submit" onclick="showMenu()" value="CONTINUE SHOPING">
+                <input type="submit" onclick="payment()" value="PROCEDE TO PAYMENT">
+            </div>
+        </section>
+
+        <section class="payment">
+            <form onsubmit="return false">
+                <h1>Payment Method</h1>
+                <table>
+                    <tr>
+                        <td><input checked type="radio" name="payment" value="CASH" /><label for="payment"
+                                name="payment">CASH</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="payment" value="CARD" /><label for="payment"
+                                name="payment">CARD</label>
+                        </td>
+                    </tr>
+                </table>
+
+                <h1>User Details</h1>
+                <table class="user_data">
+                    <tr>
+                        <td>
+                            <label for="name">Name: </label><input type="text" required="" name="name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" required="" name="last_name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="phone_number">Phone Number:</label>
+                            <input type="text" required="" name="phone_number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" onclick="printReciet()" value="SUBMIT" /></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+
+        <section class="reciet">
+            <h1>Receipt</h1>
+            <table>
+                <tr>
+                    <td class="data">Name: </td>
+                </tr>
+                <tr>
+                    <td class="data">Last Name: </td>
+                </tr>
+                <tr>
+                    <td class="data">Order Number: </td>
+                </tr>
+                <tr>
+                    <td class="data">Payment Type: </td>
+                </tr>
+            </table>
+
+            <table class="items">
+                <tr style="border-bottom: 1px dotted;">
+                    <th>Items</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </table>
+
+            <div style="text-align: center;">
+                <input type="submit" onclick="window.location.href='index.html'" value="GO TO MENU" />
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ragedi Store rights reserved.</p>
+    </footer>
+
+    <script>
+        var count = 0;
+        var currentTotal = 0;
+        var cloneRowList = [];
+        var originalRowList = [];
+
+        function showMenu() {
+            var sec = document.getElementsByTagName("section");
+            document.getElementsByClassName("shoping_cart")[0].style = "display:none";
+
+            for (x = 0; x < sec.length; x++) {
+                if (sec[x].className !== "shoping_cart" && sec[x].className !== "payment" && sec[x].className !== "reciet") {
+                    sec[x].style = "display:block";
+                }
+            }
+        }
+
+        function addToCart(button, price) {
+            if (button.value === "GO TO CART") {
+                var sec = document.getElementsByTagName("section");
+                document.getElementsByClassName("shoping_cart")[0].style = "display:block";
+
+                for (x = 0; x < sec.length; x++) {
+                    if (sec[x].className !== "shoping_cart" && sec[x].className !== "payment" && sec[x].className !== "reciet") {
+                        sec[x].style = "display:none";
+                    }
+                }
+                const cart = document.getElementById("cart_list");
+
+                for (x = 0; x < cloneRowList.length; x++) {
+                    cart.append(cloneRowList[x]);
+                    var elm = cloneRowList[x].children[1].children[1];
+                    var bt = cloneRowList[x].children[1].children[2];
+                    elm.disabled = true;
+                    elm.style = "border:none";
+                    bt.value = "REMOVE";
+                    bt.style = "background:red";
+                }
+            } else if (button.value === "REMOVE") {
+                const cart = document.getElementById("cart_list");
+                const tr = button.parentElement.parentElement;
+                const index = cloneRowList.indexOf(tr);
+                if (index !== -1) {
+                    cloneRowList.splice(index, 1);
+                    cart.removeChild(tr);
+                    const itemCount = document.getElementById('item_count');
+
+                    count--;
+                    itemCount.innerHTML = "Items: " + count;
+
+                    for (x = 0; x < originalRowList.length; x++) {
+                        if (tr.children[0].children[1].innerHTML === originalRowList[x].children[0].children[1].innerHTML) {
+                            originalRowList[x].children[1].children[2].value = "ADD TO CART";
+                            originalRowList[x].children[1].children[2].style = "background:#4ccf69";
+                            break;
+                        }
+                    }
+
+                    console.log(tr.children[0].children[1].innerHTML);
+                    console.log();
+
+
+                    price = button.parentElement.children[0].innerHTML.replace("R", "");
+                    currentTotal -= parseFloat(price) * parseInt(quantity);
+                    total.innerHTML = 'Total: R' + currentTotal.toFixed(2);
+                }
+            }
+            else {
+                const cart = document.getElementById('cart');
+                const itemCount = document.getElementById('item_count');
+                const total = document.getElementById('total');
+
+                button.value = "GO TO CART";
+                button.style = "background:grey";
+
+                my_elements = button.parentElement.children;
+
+                price = my_elements[0].innerHTML.replace("R", "");
+                quantity = my_elements[1].value;
+
+                count++;
+                itemCount.innerHTML = "Items: " + count;
+
+                elm = button.parentElement.parentElement.cloneNode(true);
+                cloneRowList.push(elm)
+                originalRowList.push(button.parentElement.parentElement);
+
+                currentTotal += parseFloat(price) * parseInt(quantity);
+                total.innerHTML = 'Total: R' + currentTotal.toFixed(2);
+            }
+        }
+
+        function payment() {
+            if (count == 0) {
+                alert("The cart is empty! Add items on the cart.");
+            } else {
+                document.getElementsByClassName("shoping_cart")[0].style = "display:none";
+                document.getElementsByClassName("payment")[0].style = "display:block";
+            }
+        }
+
+        function handleKeyPress(event) {
+            var keyCode = event.keyCode || event.which;
+            if (keyCode >= 37 && keyCode <= 40) {
+                return true;
+            } else {
+                event.preventDefault();
+                return false;
+            }
+        }
+
+        function printReciet() {
+            var box = document.getElementsByClassName("user_data")[0].children[0];
+            const user_details = [];
+
+            for (x = 0; x < 3; x++) {
+                if (box.children[x].children[0].children[1].value === "") {
+                    return;
+                } else {
+                    user_details.push(box.children[x].children[0].children[1].value);
+                }
+            }
+
+            document.getElementsByClassName("payment")[0].style = "display:none";
+            document.getElementsByClassName("reciet")[0].style = "display:block";
+            var reciet_data = document.getElementsByClassName("data");
+
+            reciet_data[0].innerHTML += " " + user_details[0];
+            reciet_data[1].innerHTML += " " + user_details[1];
+            var order_num = Math.floor(5 + Math.random() * 100);
+            reciet_data[2].innerHTML += " " + order_num;
+
+            const payment_type = document.getElementsByName("payment");
+
+            for (x = 0; x < payment_type.length; x++) {
+                if (payment_type[x].checked) {
+                    reciet_data[3].innerHTML += " " + payment_type[x].value;
+                    break;
+                }
+            }
+
+            for (x = 0; x < cloneRowList.length; x++) {
+                item_name = cloneRowList[x].children[0].children[1].innerHTML;
+                quantity = cloneRowList[x].children[1].children[1].value
+                price = cloneRowList[x].children[1].children[0].innerHTML;
+
+                const t1 = document.createElement("td");
+                const t2 = document.createElement("td");
+                const t3 = document.createElement("td");
+
+
+                t1.innerHTML = item_name;
+                t2.innerHTML = quantity;
+                t3.innerHTML = price;
+
+                const table = document.getElementsByClassName("items")[0];
+                const tr = document.createElement("tr");
+
+                tr.append(t1);
+                tr.append(t2);
+                tr.append(t3);
+
+                table.append(tr);
+            }
+
+
+            const total_info = [["Subtotal", "R" + currentTotal.toFixed(2)], ["Vat 15%", "R" + (currentTotal * 0.15).toFixed(2)], ["Total", "R" + (currentTotal + (currentTotal * 0.15)).toFixed(2)]];
+
+
+            for (x = 0; x < total_info.length; x++) {
+                const t1 = document.createElement("td");
+                const t2 = document.createElement("td");
+                const t3 = document.createElement("td");
+
+
+                t1.innerHTML = "";
+                t2.innerHTML = total_info[x][0];
+                t3.innerHTML = total_info[x][1];
+
+                const table = document.getElementsByClassName("items")[0];
+                const tr = document.createElement("tr");
+
+                if (total_info[x][0].includes("Subtotal")) {
+                    tr.style = "border-top: 1px dotted;"
+                }
+
+                tr.append(t1);
+                tr.append(t2);
+                tr.append(t3);
+
+                table.append(tr);
+            }
+
+
+
+
+        }
+    </script>
+
+</body>
+
+</html>
